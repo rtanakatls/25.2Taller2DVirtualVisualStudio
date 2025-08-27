@@ -32,6 +32,15 @@ namespace Taller2D252
                 Console.WriteLine("No se puede dividir por cero");
             }
 
+            float d;
+
+            Console.WriteLine("Ingrese el número de días: ");
+            d=float.Parse(Console.ReadLine());
+
+            Console.WriteLine($"{d} días son {d/7} semanas");
+            Console.WriteLine($"{d} días son {d/365} años");
+
+
             /*
             string name;
             int age = 0;

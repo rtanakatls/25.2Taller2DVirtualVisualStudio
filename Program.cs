@@ -10,10 +10,33 @@ namespace Taller2D252
     {
         static void Main(string[] args)
         {
+            float a;
+            float b;
+
+            Console.WriteLine("Ingrese el valor de a:");
+            a = float.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el valor de b:");
+            b = float.Parse(Console.ReadLine());
+
+            Console.WriteLine($"a + b = {a + b}");
+            Console.WriteLine($"a - b = {a - b}");
+            Console.WriteLine($"a * b = {a * b}");
+
+            if (b != 0)
+            {
+                Console.WriteLine($"a / b = {a / b}");
+                Console.WriteLine($"a % b = {a % b}");
+            }
+            else
+            {
+                Console.WriteLine("No se puede dividir por cero");
+            }
+
+            /*
             string name;
             int age = 0;
             bool isCorrect = false;
-
+            
             Console.WriteLine("Bienvenido, indícamente tu nombre:");
             name = Console.ReadLine();
             Console.WriteLine($"Hola {name}");
@@ -61,6 +84,7 @@ namespace Taller2D252
                     }
                     break;
             }
+            */
         }
     }
 }

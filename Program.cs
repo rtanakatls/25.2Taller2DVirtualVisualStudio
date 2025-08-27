@@ -10,6 +10,7 @@ namespace Taller2D252
     {
         static void Main(string[] args)
         {
+            /*
             float a;
             float b;
 
@@ -39,6 +40,34 @@ namespace Taller2D252
 
             Console.WriteLine($"{d} días son {d/7} semanas");
             Console.WriteLine($"{d} días son {d/365} años");
+            */
+
+            int year;
+            Console.WriteLine("Ingrese un año:");
+            year = int.Parse(Console.ReadLine());
+            if (year % 4 == 0)
+            {
+                if (year % 100 == 0)
+                {
+                    if(year % 400 == 0)
+                    {
+                        Console.WriteLine("El año es bisiesto");
+                    }
+                    else
+                    {
+                        Console.WriteLine("El año no es bisiesto");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("El año es bisiesto");
+                }
+            }
+            else
+            {
+                Console.WriteLine("El año no es bisiesto");
+            }
+
 
 
             /*
